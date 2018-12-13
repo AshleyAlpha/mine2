@@ -1,0 +1,29 @@
+html{
+    background-color: rgb(128,128,128);
+}
+h1{
+    color: snow;
+    font-family: calibri;
+    text-align: center;
+    padding-top: 100px;
+}
+.triangle{
+    text-align: center;
+    padding: 20px;
+    border-color: cyan;
+    font-family: calibri;
+    font-size: 20px;
+    justify-content: space-between;
+}
+input[type=text]{
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+input[type=submit]{
+    width: 10%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box; 
+}
