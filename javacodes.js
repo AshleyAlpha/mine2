@@ -17,7 +17,9 @@ var sideSum1 = function(firstvalue, secondvalue) {
      var array=[firstvalue,secondvalue,thirdvalue];
      
      var text;
-      if(sideSum1(firstvalue,secondvalue) <= thirdvalue || sideSum2(secondvalue,thirdvalue) <= firstvalue || sideSum3(firstvalue,thirdvalue) <= secondvalue){
+      if(sideSum1(firstvalue + secondvalue <= thirdvalue &&
+        secondvalue + firstvalue <= thirdvalue) || sideSum2(firstvalue + thirdvalue <= secondvalue &&
+            thirdvalue + firstvalue <= secondvalue) || sidesum3 (secondvalue + thirdvalue <= firstvalue && thirdvalue + secondvalue <= firstvalue)){
          text="it is not a triangle"
      }
      else if(firstvalue === secondvalue && secondvalue === thirdvalue){
