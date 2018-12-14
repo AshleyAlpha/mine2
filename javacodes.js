@@ -40,7 +40,7 @@ var sideSum1 = function(firstvalue, secondvalue) {
      else{
          text = "Not a Triangle.";
      }
-     document.getElementById("demo").innerHTML = "The values are then, this i ["+array+"]"+" ";
+     document.getElementById("demo").innerHTML = "The values are:["+array+"]"+" ";
      document.getElementById('demo').innerHTML += text;
 
   }
