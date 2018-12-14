@@ -14,6 +14,7 @@ var sideSum1 = function(firstvalue, secondvalue) {
      var firstvalue=document.getElementById('one').value;
      var secondvalue=document.getElementById('two').value;
      var thirdvalue=document.getElementById('three').value;
+     var array=[firstvalue,secondvalue,thirdvalue];
      
      var text;
       if(sideSum1(firstvalue,secondvalue) <= thirdvalue || sideSum2(secondvalue,thirdvalue) <= firstvalue || sideSum3(firstvalue,thirdvalue) <= secondvalue){
@@ -22,16 +23,16 @@ var sideSum1 = function(firstvalue, secondvalue) {
      else if(firstvalue === secondvalue && secondvalue === thirdvalue){
          text = "Equilaterial Triangle.";
      }
-      //Equivalent Triangle
+      // this is Equivalent Triangle
   
      else if(firstvalue===secondvalue || firstvalue===thirdvalue || secondvalue===thirdvalue) {
          text="Isoscele Triangle.";
      }
-     //Isoscele Triangle
+     // this is Isoscele Triangle
      else if(firstvalue!==secondvalue && firstvalue!==thirdvalue &&secondvalue!==thirdvalue){
          text="Scalene Triangle."
      }
-     //Scalene Triangle
+     // this is Scalene Triangle
   
   
      else{
