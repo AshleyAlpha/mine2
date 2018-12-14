@@ -9,7 +9,7 @@ var sideSum1 = function(firstvalue, secondvalue) {
   var sideSum3 = function(firstvalue, thirdvalue) {
     return firstvalue + thirdvalue;
   };
-  function check(){
+  function run(){
   
      var firstvalue=document.getElementById('one').value;
      var secondvalue=document.getElementById('two').value;
@@ -37,5 +37,5 @@ var sideSum1 = function(firstvalue, secondvalue) {
      else{
          text = "Not a Triangle.";
      }
-     document.getElementById('demo').innerHTML = text;
+     document.getElementById("demo").innerHTML = text;
   }
