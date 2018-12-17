@@ -20,19 +20,19 @@ var sideSum1 = function(firstvalue, secondvalue) {
       if(sideSum1(firstvalue,secondvalue) <= thirdvalue &&sideSum1(secondvalue,firstvalue)<= thirdvalue||
        sideSum2(secondvalue,thirdvalue) <= firstvalue && sideSum2(thirdvalue,secondvalue) <= firstvalue ||
         sideSum3(firstvalue,thirdvalue) <= secondvalue && sideSum3(thirdvalue,firstvalue)<= secondvalue){
-        text="then, this is not a triangle"
+        text="it is not a triangle"
      }
      else if(firstvalue === secondvalue && secondvalue === thirdvalue){
-         text = "then, this is Equilateral Triangle.";
+         text = "it is Equilateral Triangle.";
      }
       // this is Equivalent Triangle
   
      else if(firstvalue===secondvalue || firstvalue===thirdvalue || secondvalue===thirdvalue) {
-         text="then, this is Isoscele Triangle.";
+         text="it is Isoscele Triangle.";
      }
      // this is Isoscele Triangle
      else if(firstvalue!==secondvalue && firstvalue!==thirdvalue &&secondvalue!==thirdvalue){
-         text="Scalene Triangle."
+         text=" it is Scalene Triangle."
      }
      // this is Scalene Triangle
   
@@ -40,7 +40,7 @@ var sideSum1 = function(firstvalue, secondvalue) {
      else{
          text = "Not a Triangle.";
      }
-     document.getElementById("demo").innerHTML = "The values are:["+array+"]"+" ";
+     document.getElementById("demo").innerHTML = "The values are:["+array+"]"+"then,";
      document.getElementById('demo').innerHTML += text;
 
   }
