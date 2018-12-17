@@ -23,12 +23,12 @@ var sideSum1 = function(firstvalue, secondvalue) {
         text="it is not a triangle"
      }
      else if(firstvalue === secondvalue && secondvalue === thirdvalue){
-         text = "it is Equilateral Triangle.";
+         text = "it is Isoscele Triangle .";
      }
       // this is Equivalent Triangle
   
      else if(firstvalue===secondvalue || firstvalue===thirdvalue || secondvalue===thirdvalue) {
-         text="it is Isoscele Triangle.";
+         text="it is Equilateral Triangle.";
      }
      // this is Isoscele Triangle
      else if(firstvalue!==secondvalue && firstvalue!==thirdvalue &&secondvalue!==thirdvalue){
